@@ -10,12 +10,24 @@ public class myLinkedListQueue<E> {
     }
 
     public void dequeue(){
+        try{
         list.remove(0);
         System.out.println(list.getElement(0));
+        } catch (NoSuchElementException noSuchElementException){
+            System.out.println("method is no longer available :(");
+        }catch (IndexOutOfBoundsException i){
+            System.out.println("the method is no longer available :(");
+        }
     }
 
     public void peek(){
-        System.out.println(list.getElement(0));
+        try{
+            System.out.println(list.getElement(0));
+        } catch (NoSuchElementException noSuchElementException){
+            System.out.println("method is no longer available :(");
+        }catch (IndexOutOfBoundsException i){
+            System.out.println("the method is no longer available :(");
+        }
     }
 
     public void isEmpty(){
