@@ -18,5 +18,12 @@ public class Main {
         stack.push("prev");
         stack.push("top");
         stack.peek();
+
+        System.out.println("\n"+"--- Test for 'isEmpty' method ---");
+        stack.isEmpty();
+        stack.list.clear();
+        System.out.println("after removing all elements ->");
+        stack.isEmpty();
+
     }
 }
