@@ -50,6 +50,11 @@ public class Main {
                 queue.dequeue();
                 queue.dequeue();
 
+                System.out.println("\n"+"--- Test for 'peek' method ---");
+                queue.peek();
+                queue.enqueue("a");
+                queue.enqueue("b");
+                queue.peek();
         }
     }
 }
