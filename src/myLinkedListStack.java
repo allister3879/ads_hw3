@@ -16,4 +16,9 @@ public class myLinkedListStack<E> {
         index = list.getSize()-1; // reassigning decreased value of size
         System.out.println("current top: "+list.getElement(index)); // return top element
     }
+
+    public void peek() {
+        int index = list.getSize()-1;
+        System.out.println("current top: "+list.getElement(index));
+    }
 }
