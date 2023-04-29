@@ -11,6 +11,10 @@ public class myLinkedListStack<E> {
     }
 
     public void pop(){
+        if(empty()){
+            System.out.println("method not available :(");
+            throw new EmptyStackException();
+        }
         int index = list.getSize()-1; // index of element
         list.remove(index);
         index = list.getSize()-1; // reassigning decreased value of size
@@ -18,19 +22,23 @@ public class myLinkedListStack<E> {
     }
 
     public void peek() {
+        if(empty()){
+            System.out.println("method not available :(");
+            throw new EmptyStackException();
+        }
         int index = list.getSize()-1;
         System.out.println("current top: "+list.getElement(index));
     }
 
     public void isEmpty(){
-        boolean empty = true; // create boolean
-        if(list.getSize() > 0)
-            empty = false; // is size > 0 boolean is false
-
-        if(empty)
+        if(empty())
             System.out.println("stack is empty");
         else
             System.out.println("stack is not empty");  // print result
+    }
+
+    private boolean empty(){
+        return list.getSize() == 0;
     }
 
     public void size(){
