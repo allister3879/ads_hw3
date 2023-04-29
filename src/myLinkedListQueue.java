@@ -25,5 +25,7 @@ public class myLinkedListQueue<E> {
             System.out.println("queue is not empty");
     }
 
-    public boolean empty()
+    public void size(){
+        System.out.println("number of elements: "+ list.getSize());
+    }
 }
