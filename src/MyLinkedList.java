@@ -7,6 +7,8 @@ public class MyLinkedList<E> implements List{
         tail = null;
         size = 0;
     }
+
+
     private class MyNode {
         E data;
         MyNode next;
