@@ -17,4 +17,13 @@ public class myLinkedListQueue<E> {
     public void peek(){
         System.out.println(list.getElement(0));
     }
+
+    public void isEmpty(){
+        if(list.getSize() == 0)
+            System.out.println("queue is empty");
+        else
+            System.out.println("queue is not empty");
+    }
+
+    public boolean empty()
 }
