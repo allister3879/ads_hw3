@@ -11,14 +11,15 @@ public class myLinkedListStack<E> {
     }
 
     public void pop(){
-        if(empty()){
-            System.out.println("method not available :(");
-            throw new EmptyStackException();
-        }
+        try{
         int index = list.getSize()-1; // index of element
         list.remove(index);
-        index = list.getSize()-1; // reassigning decreased value of size
-        System.out.println("current top: "+list.getElement(index)); // return top element
+        System.out.println("current top: "+list.getElement(list.getSize()-1)); // return top element
+        } catch (EmptyStackException emptyStackException){
+            System.out.println("the method is no longer available :(");
+        }catch (IndexOutOfBoundsException i){
+            System.out.println("the method is no longer available :(");
+        }
     }
 
     public void peek() {
