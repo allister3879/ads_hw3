@@ -32,4 +32,8 @@ public class myLinkedListStack<E> {
         else
             System.out.println("stack is not empty");  // print result
     }
+
+    public void size(){
+        System.out.println("number of elements: "+list.getSize()); // return number of elements
+    }
 }
