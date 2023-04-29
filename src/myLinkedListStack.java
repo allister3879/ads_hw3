@@ -21,4 +21,15 @@ public class myLinkedListStack<E> {
         int index = list.getSize()-1;
         System.out.println("current top: "+list.getElement(index));
     }
+
+    public void isEmpty(){
+        boolean empty = true; // create boolean
+        if(list.getSize() > 0)
+            empty = false; // is size > 0 boolean is false
+
+        if(empty)
+            System.out.println("stack is empty");
+        else
+            System.out.println("stack is not empty");  // print result
+    }
 }
