@@ -55,6 +55,12 @@ public class Main {
                 queue.enqueue("a");
                 queue.enqueue("b");
                 queue.peek();
+
+                System.out.println("\n" + "--- Test for 'isEmpty' method ---");
+                queue.isEmpty();
+                queue.list.clear();
+                System.out.println("after removing all elements ->");
+                queue.isEmpty();
         }
     }
 }
