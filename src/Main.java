@@ -38,11 +38,17 @@ public class Main {
                 stack.size();
                 stack.push("smth");
                 stack.size();
+                break;
             case 2:
                 System.out.println("--- Test for 'enqueue' method ---");
                 queue.enqueue(1);
                 queue.enqueue("a");
                 queue.enqueue(7.7);
+
+                System.out.println("--- Test for 'dequeue' method ---");
+                queue.dequeue();
+                queue.dequeue();
+                queue.dequeue();
         }
     }
 }

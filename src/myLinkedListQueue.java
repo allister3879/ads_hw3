@@ -7,6 +7,7 @@ public class myLinkedListQueue<E> {
 
     public void enqueue(E element){
         list.add(element); // add element to the list
+        System.out.println("element "+element+" added");
     }
 
     public void dequeue(){
