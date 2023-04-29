@@ -13,4 +13,8 @@ public class myLinkedListQueue<E> {
         list.remove(0);
         System.out.println(list.getElement(0));
     }
+
+    public void peek(){
+        System.out.println(list.getElement(0));
+    }
 }
