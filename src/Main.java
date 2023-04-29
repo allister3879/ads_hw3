@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         myLinkedListStack stack = new myLinkedListStack();
+        myLinkedListQueue queue = new myLinkedListQueue<>();
         System.out.println("--- Test for 'push' method ---");
         stack.push(1);
         stack.push('a');
@@ -29,5 +30,6 @@ public class Main {
         stack.size();
         stack.push("smth");
         stack.size();
+
     }
 }
