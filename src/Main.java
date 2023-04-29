@@ -25,5 +25,9 @@ public class Main {
         System.out.println("after removing all elements ->");
         stack.isEmpty();
 
+        System.out.println("\n"+"--- Test for 'size' method ---");
+        stack.size();
+        stack.push("smth");
+        stack.size();
     }
 }
