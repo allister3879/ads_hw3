@@ -23,12 +23,13 @@ public class myLinkedListStack<E> {
     }
 
     public void peek() {
-        if(empty()){
-            System.out.println("method not available :(");
-            throw new EmptyStackException();
+        try{
+            System.out.println("current top: "+list.getElement(list.getSize()-1)); // return top element
+        } catch (EmptyStackException emptyStackException){
+            System.out.println("the method is no longer available :(");
+        }catch (IndexOutOfBoundsException i){
+            System.out.println("the method is no longer available :(");
         }
-        int index = list.getSize()-1;
-        System.out.println("current top: "+list.getElement(index));
     }
 
     public void isEmpty(){

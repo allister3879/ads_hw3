@@ -12,5 +12,11 @@ public class Main {
         stack.pop();
         stack.pop();
         stack.pop();
+
+        System.out.println("\n"+"--- Test for 'peek' method ---");
+        stack.peek();
+        stack.push("prev");
+        stack.push("top");
+        stack.peek();
     }
 }
