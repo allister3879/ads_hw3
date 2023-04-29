@@ -45,10 +45,11 @@ public class Main {
                 queue.enqueue("a");
                 queue.enqueue(7.7);
 
-                System.out.println("--- Test for 'dequeue' method ---");
+                System.out.println("\n"+"--- Test for 'dequeue' method ---");
                 queue.dequeue();
                 queue.dequeue();
                 queue.dequeue();
+
         }
     }
 }

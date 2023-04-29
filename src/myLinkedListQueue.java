@@ -13,7 +13,7 @@ public class myLinkedListQueue<E> {
     public void dequeue(){
         try{
         list.remove(0);
-        System.out.println(list.getElement(0));
+        System.out.println("first in queue: "+list.getElement(0));
         } catch (NoSuchElementException noSuchElementException){
             System.out.println("method is no longer available :(");
         }catch (IndexOutOfBoundsException i){
@@ -23,7 +23,7 @@ public class myLinkedListQueue<E> {
 
     public void peek(){
         try{
-            System.out.println(list.getElement(0));
+            System.out.println("first in queue: "+list.getElement(0));
         } catch (NoSuchElementException noSuchElementException){
             System.out.println("method is no longer available :(");
         }catch (IndexOutOfBoundsException i){
