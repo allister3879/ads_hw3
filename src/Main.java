@@ -61,6 +61,13 @@ public class Main {
                 queue.list.clear();
                 System.out.println("after removing all elements ->");
                 queue.isEmpty();
+
+                System.out.println("\n" + "--- Test for 'size' method ---");
+                queue.size();
+                queue.enqueue("1");
+                queue.enqueue("2");
+                queue.size();
+                break;
         }
     }
 }
